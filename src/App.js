@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Button } from 'react-bootstrap';
 import './App.css';
+import bars from '../public/images/bars.png';
 
 
 class App extends Component {
@@ -21,19 +22,24 @@ class App extends Component {
 
     return (
       <div>
-        <Navbar fluid>
+        <Navbar fluid inverse>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Auth0 - React</a>
+              <img id="logoImg" src={bars} alt="barsimage"/>
             </Navbar.Brand>
-            <Button
+            </Navbar.Header>
+    
+          </Navbar>
+      
+
+      
+        <Button
               bsStyle="primary"
               className="btn-margin"
               onClick={this.goTo.bind(this, 'home')}
             >
               Home
             </Button>
-            </Navbar.Header>
             {
               !isAuthenticated() && (
                   <Button
@@ -56,8 +62,6 @@ class App extends Component {
                   </Button>
                 )
             }
-          
-        </Navbar>
       </div>
     );
   }
