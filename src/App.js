@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Button } from 'react-bootstrap';
 import './App.css';
 import bars from '../public/images/bars.png';
+import Luminar from '../public/images/Luminar.png';
 
 
 class App extends Component {
@@ -28,11 +29,24 @@ class App extends Component {
               <img id="logoImg" src={bars} alt="barsimage"/>
             </Navbar.Brand>
             </Navbar.Header>
+
+            <Nav pullRight>
+              <NavItem eventKey={1} href="#">SDK</NavItem>
+              <NavItem eventKey={2} href="#">Firmware</NavItem>
+              <NavItem eventKey={3} href="#">Sample Data</NavItem>
+              <NavItem eventKey={4} href="#">Product Info Guide</NavItem>
+              <NavItem eventKey={5} href="#">Help</NavItem>
+              <NavItem eventKey={6} href="#">FAQs</NavItem>
+            </Nav>
     
           </Navbar>
-      
+          <div id="titlePic">
+            <img id="Luminar" src={Luminar} alt="titlePic"/>
+          </div>
 
-      
+          
+
+      <div className="center">
         <Button
               bsStyle="primary"
               className="btn-margin"
@@ -62,6 +76,7 @@ class App extends Component {
                   </Button>
                 )
             }
+      </div>
       </div>
     );
   }

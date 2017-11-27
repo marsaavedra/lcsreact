@@ -1,3 +1,29 @@
 .btn-margin {
   margin: 7px 3px;
 }
+
+.wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 900px;
+  height: auto;
+}
+
+.center {
+	margin: auto;
+	width: 40%;
+	text-align: center;
+
+}
+
+#Luminar {
+	width: 60%;
+	height: auto;
+	
+}
+
+#titlePic {
+	margin: auto;
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
